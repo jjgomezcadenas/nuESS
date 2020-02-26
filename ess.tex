@@ -1,184 +1,19 @@
-%\documentclass[openany]{book}
-\documentclass[12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amssymb} %for fancy L
-\usepackage{calrsfs} %for fancy L
-\usepackage{cancel}
-\usepackage{tabularx}
-\usepackage[hyphens]{url}
-\usepackage{booktabs}
-\usepackage{graphicx}
-\usepackage[titletoc,title]{appendix}
-\usepackage{subfig}
-\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n} %for fancy L
-\usepackage{epsfig, float,array,tabu,longtable,}
-\usepackage{hyperref,wrapfig}
-\usepackage{enumerate}
-\usepackage{graphicx,psfrag}
-\usepackage{enumitem}
-\setlist{itemsep=0pt}
-\usepackage{cite}
-\usepackage{sectsty}
-\usepackage{epstopdf}
-\usepackage{amsmath,esint, setspace, fancyhdr, amsfonts, bookmark, blindtext}
-\usepackage[normalem]{ulem}
-\usepackage{tikz}
-\usepackage{rotating}
-\usepackage[americanvoltages,fulldiodes,siunitx]{circuitikz}
-\usepackage{stackengine}
-\usetikzlibrary{matrix}
-\usepackage{multirow}
-\usepackage{multicol}
-\usetikzlibrary{shapes,backgrounds,patterns}
-\usetikzlibrary{mindmap,trees,decorations.markings}
-\usetikzlibrary{quotes,angles}
-\usepackage{verbatim}
-\renewcommand{\baselinestretch}{1}
-\usepackage{natbib}
-\setlength{\bibsep}{2.8pt}
-\setlength{\textheight}{8in}
-\setlength{\textwidth}{6.5in}
-\setlength{\headheight}{0in}
-\setlength{\headsep}{0.25in}
-\usepackage{graphicx}
-\setlength{\topmargin}{0in}
-\setlength{\oddsidemargin}{0in}
-\setlength{\evensidemargin}{0in}
-\setlength{\parindent}{.3in}
-\usepackage{listings}
-\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
-\definecolor{mylilas}{RGB}{170,55,241}
-\doublespacing
-
-% remove double title from References section
-\renewcommand\refname{}
-
-\begin{document}
-
-
-\begin{titlepage}
-
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
-
-\center % Center everything on the page
- 
-%---------------------------------------------------------
-%	HEADING SECTIONS
-%---------------------------------------------------------
-
-\textsc{\LARGE }\\[1.5cm] % Name of your university/college
-\textsc{\Large Expression of Interest}\\[0.5cm] % Major heading such as course name
-\textsc{\large }\\[0.5cm] % Minor heading such as course title
-
-%---------------------------------------------------------
-%	TITLE SECTION
-%---------------------------------------------------------
-
-\HRule \\[0.6cm]
-{ \large \bfseries Coherent Elastic Neutrino-Nucleus Scattering  at the ESS}\\[0.4cm] % Title of your document
-\HRule \\[1.0cm]
- 
-%---------------------------------------------------------
-%	AUTHOR SECTION
-%---------------------------------------------------------
-
-
-%\begin{center} \large
-%\medskip
-%{\textsc{\textbf{Cole Mitchell} }}  \quad  {\textsc{\textbf{Matt %Policelli}}} 	\quad
-%{\textsc{\textbf{Maurcio Segovia} }}  \quad 
-%{\textsc{\textbf{Kyra Twohy} }}   % Your name, bold and small caps
-%\end{center}
-%\end{minipage}
-
-%\begin{center} \Large
-%{\textsc{\textbf{Group 7} }} 
-%\end{center}
-
-~
-%\begin{minipage}{0.4\textwidth}
-%\begin{flushright} \large
-%\emph{Supervisor:} \\
-%Dr. James \textsc{Smith} % Supervisor's Name
-%\end{flushright}
-%\end{minipage}\\[4cm]
-
-% If you don't want a supervisor, uncomment the two lines below and remove the section above
-%\Large \emph{Author:}\\
-%John \textsc{Smith}\\[3cm] % Your name
-
-
-\vspace{7mm}
-%---------------------------------------------------------
-%	DATE SECTION
-%---------------------------------------------------------
-\begin{center}
-{\large \today}
-\end{center}
- % Date, change the \today to a set date if you want to be precise
- \textsc{\small Document Number: }\\
- \textsc{\small Revision: 4}\\
-  \textsc{\small State: Preliminary}\\
-\vspace{21 mm}
-%---------------------------------------------------------
-%	LOGO SECTION
-%---------------------------------------------------------
-%\vfill
-\newcommand*{\plogo}{\includegraphics[width=0.35\textwidth]{ESS_logo.png}}
-
-\plogo\\[1cm] % Include a department/university logo - this will require the graphicx package
- 
-%---------------------------------------------------------
-
-\vfill % Fill the rest of the page with whitespace
-
-
-
-\pagebreak
-\newpage
-
-
-
-
-\begin{table}[]
-\begin{tabular}{lllll}
-\cline{4-5}
- &                       & \multicolumn{1}{l|}{}                        & \multicolumn{1}{c|}{\textbf{Name}}                                                      & \multicolumn{1}{c|}{\textbf{Affiliation}}                                                  \\ \cline{3-5} 
- & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\textbf{Main proposers}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}J.I. Collar\\ J.J. Gomez-Cadenas\\ F. Monrabal\\ C. Pe\~na-Garay\\ P. Privitera \end{tabular}}          & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}U. of Chicago\\ DIPC\\ DIPC\\ LSC \\ U. of Chicago \end{tabular}}              \\ \cline{3-5} 
- & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\textbf{Co-proposers}}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}D. Baxter \\ P. Coloma\\ C.E. Dahl\\ I. Esteban \\ P. Ferrario \\ M. C. Gonzalez?Garcia\\ A.R.L. Kavner \\ C.M. Lewis \\ N. Lopez-March \\ J. Mu\~noz-Vidal\\ K. Ramanathan \\ J. Renner \end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}U. of Chicago\\ IFIC\\ Northwestern U.\\ U. Barcelona\\ DIPC \\ Stony Brook U./U. Barcelona \\ U. of Chicago\\ U. of Chicago \\IFIC \\ DIPC \\ U. of Chicago \\ U. Santiago de Compostela \end{tabular}} \\ \cline{3-5} 
- &                       &                                              &                                                                                         &                                                                             
-\end{tabular}
-\end{table}
-\pagebreak
-
-
-\end{titlepage}
-
-
-\clearpage
-\newpage
-\tableofcontents
-\newpage     
-
-
-% EXECUTIVE SUMMARY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Executive Summary}
-
-The European Spallation Source will soon provide the most intense neutron beams for
-multi-disciplinary science. Conveniently, it will also generate the
-largest pulsed neutrino production rate suitable for the detection and study of Coherent
-Elastic Neutrino-Nucleus Scattering (CE$\nu$NS), a process recently
-measured for the first time at ORNL's Spallation Neutron Source. CE$\nu$NS holds the potential for significant advances in sensitivity to numerous aspects of particle and nuclear phenomenology, providing a new, long-sought tool in the search for physics beyond the Standard Model.\\
-
-We propose to use innovative nuclear-recoil detector technologies, optimized to profit
-from the order-of-magnitude increase in neutrino production that is expected from 
-the ESS when compared to all other existing or planned spallation sources. These low-cost, compact, unintrusive devices profit from previous R\&D aimed at other particle physics applications. They can be deployed coincident with the start of the ESS user program, without any significant impact or deviation from the ESS neutron mandate. The combination of a state-of-the-art performance from these advanced detectors, together with the uniqueness of the ESS as a high-yield pulsed neutrino source, will return high-statistics, precision CE$\nu$NS
-measurements at the limit of the sensitivity to new physics reachable through this novel neutrino interaction mechanism. \\
-
-Exploiting the exciting new development and opportunity that CE$\nu$NS represents, the program described here will significantly expand the physics reach of the ESS to a new area, that of neutrino physics, at the expense of just a minimal investment of resources. 
-
-\newpage
+%\section{Executive Summary}
+%
+%The European Spallation Source will soon provide the most intense neutron beams for
+%multi-disciplinary science. Conveniently, it will also generate the
+%largest pulsed neutrino production rate suitable for the detection and study of Coherent
+%Elastic Neutrino-Nucleus Scattering (CE$\nu$NS), a process recently
+%measured for the first time at ORNL's Spallation Neutron Source. CE$\nu$NS holds the potential for significant advances in sensitivity to numerous aspects of particle and nuclear phenomenology, providing a new, long-sought tool in the search for physics beyond the Standard Model.\\
+%
+%We propose to use innovative nuclear-recoil detector technologies, optimized to profit
+%from the order-of-magnitude increase in neutrino production that is expected from 
+%the ESS when compared to all other existing or planned spallation sources. These low-cost, compact, unintrusive devices profit from previous R\&D aimed at other particle physics applications. They can be deployed coincident with the start of the ESS user program, without any significant impact or deviation from the ESS neutron mandate. The combination of a state-of-the-art performance from these advanced detectors, together with the uniqueness of the ESS as a high-yield pulsed neutrino source, will return high-statistics, precision CE$\nu$NS
+%measurements at the limit of the sensitivity to new physics reachable through this novel neutrino interaction mechanism. \\
+%
+%Exploiting the exciting new development and opportunity that CE$\nu$NS represents, the program described here will significantly expand the physics reach of the ESS to a new area, that of neutrino physics, at the expense of just a minimal investment of resources. 
+%
+%\newpage
 
 % Scientific Opportunity %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Science Case and Opportunity}
@@ -194,9 +29,9 @@ In a seminal paper \cite{leo}, Drukier and Stodolsky described the prospects for
 
 The physics potential of CE$\nu$NS studies at the ESS has been examined in a recent publication \cite{ESS}. To avoid repetition, in this document we only summarize and condense the arguments presented there in much more detail. The ESS is on schedule to provide first protons on target during 2021, generating by 2023 an order of magnitude increase in neutrino production with respect to the SNS (Fig.\ \ref{fig:fig1}).  Compact, low-cost detectors (few kg to few tens of kg) operated at the ESS, have the opportunity to produce CE$\nu$NS measurements not limited in sensitivity by signal statistics (Fig.\ \ref{fig:fig2}), but instead only  by the irreducible O(10)\%  systematic error associated to uncertainties in detector response and neutrino flux.  Differences in beam timing profile between the SNS and ESS were included in the analysis in \cite{ESS}, concluding that the increase in neutrino production more than compensates for their impact on background reduction. The outcome is that the ESS will provide the very best sensitivity to neutrino properties and other areas of phenomenology that can be achieved via CE$\nu$NS, from any foreseeable future neutrino source (Fig.\ \ref{fig:fig2}, Table I). The large CE$\nu$NS signal throughput expected at the ESS allows to keep the detectors small (Fig.\ \ref{fig:fig3}), and therefore unintrusive to ESS neutron operations.\\
 
-\begin{figure}[H]
+\begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=5.1in]{fig1.eps}
+\includegraphics[width=5.1in]{fig1.pdf}
 \caption{\label{fig:fig1}\scriptsize {\it Left:} neutrino yields for the SNS mercury and
   ESS tungsten targets, obtained from different simulation packages. The first column shows predictions from a dedicated
   calculation \cite{burman,report}, validated against neutrino cross
@@ -207,24 +42,24 @@ The physics potential of CE$\nu$NS studies at the ESS has been examined in a rec
 In the same publication we have described the opportunity to reinvest state-of-the-art nuclear recoil detectors already developed for other uses (e.g., DAMIC-M CCDs \cite{damic1,damic2,damic3,damic4} and scintillating bubble chambers \cite{eric} for WIMP detection, NEXT gaseous TPCs for double-beta decay \cite{next1,next2,next3}), for this purpose of CE$\nu$NS exploration (Fig.\ \ref{fig:fig3}). Our publication also describes novel technologies such as undoped cryogenic (80 K) CsI scintillators. This material, in combination with advanced light sensors and waveshifters, increases the CE$\nu$NS signal rate per detector mass by a factor of eight, with respect to the room-temperature CsI[Na] that was employed for the first CE$\nu$NS detection at the SNS. To provide some perspective, a compact 22 kg  CsI detector will register $\sim$8,000 CE$\nu$NS events per year at the ESS \cite{ESS}. This can be contrasted with the $\sim$3,000 events per year that a massive 750 kg liquid argon detector would achieve at the SNS \cite{tayloe}. Similarly-large signal rates are expected from other compact technologies proposed for use at the ESS \cite{ESS}. What is more, they are all able to reach nuclear recoil energies of $\lesssim$ 1 keV$_{nr}$. This maximizes their sensitivity to new physics, which appears preferentially at the lowest energies \cite{ESS}. This is again in contrast with the 20 keV$_{nr}$ threshold that can be expected from LAr scintillation \cite{tayloe,tayloe2}. While some of the detector technologies we have proposed excel in specific areas (e.g., DAMIC silicon CCDs for neutrino magnetic moment studies, Table I), their combination is synergistic, both for improving sensitivity, and for the investigation of possible anomalies (Fig.\ \ref{fig:fig2}, \cite{ESS}).   \\
 
 
-\begin{figure}[H]
+\begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=5.3in]{fig2.eps}
+\includegraphics[width=5.3in]{fig2.pdf}
 \caption{\label{fig:fig2}\scriptsize {\it Left:} Large CE$\nu$NS signal statistics expected from a 22.5 kg cryogenic CsI detector installed 20 m from the ESS target \cite{ESS}. Improvements in neutrino production and detector performance provide a $\sim\times100$ increase in CE$\nu$NS signal throughput with respect to the room-temperature CsI[Na] originally employed at the SNS \cite{ESS}. The ability to distinguish prompt $\nu_{\mu}$ from delayed $\nu_{e}$, $\bar{\nu}_{\mu}$ neutrino emissions using recoil energy information can be exploited towards a sensitive search for sterile neutrinos \cite{carlos}.  {\it Right:} increase in sensitivity to a parametrization of non-standard neutrino interactions with quarks, obtained by combining several target materials at the ESS (in this example different gases within a NEXT chamber), compared to the SNS. A similar advantage in all other areas of interest is expected (Table I, \cite{ESS}), a result of the order of magnitude increase in neutrino production at the ESS, and of technological advances in the nuclear recoil detectors being considered.}
 \end{center}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=6.5in]{fig3.eps}
+\includegraphics[width=6.5in]{fig3.pdf}
 \caption{\label{fig:fig3} \scriptsize {\it Left, center:} innovative, compact nuclear recoil detectors such as PPC germanium diodes \cite{ppc} are ready for an early ESS deployment. The plot shows a favorable comparison between simulated beam-related and measured steady-state (subtractable) backgrounds from the compact 3 kg PPC in the picture, against the expected CE$\nu$NS signal at the ESS. An overly conservative increase in beam-related backgrounds by a factor of ten with respect to our own measurements at the SNS  was adopted in the simulations \cite{ESS}. In an early stage of this project we envision a full characterization of ESS backgrounds via simulation and neutron measurements (Sec.\ 3). {\it Right:} The NEXT-White detector at the Canfranc underground laboratory (LSC). An envisioned chamber at the ESS will be similar in size, and will share many technical solutions already developed for this apparatus.}
 \end{center}
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=6.5in]{table.eps}
+\includegraphics[width=6.5in]{table.pdf}
 \caption{\label{fig:figx} \scriptsize 
 Table I: Allowed ranges at 90\% C.L. for the weak mixing
   angle (given as best fit $\pm 1.64 \sigma$), neutrino charge radii for three flavour
@@ -235,11 +70,7 @@ Table I: Allowed ranges at 90\% C.L. for the weak mixing
 \end{center} 
 \end{figure}
 
-
-
-
-
-\newpage
+%\newpage
 
 % Timeline %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Timeline}
@@ -256,16 +87,16 @@ From the present perspective, a rough timeline can be sketched:
 \item {\bf 2027-...:} In the event of detection of signatures of new physics, or if a large increase in sensitivity is foreseen by extrapolating a best-performing technology, concentration of resources on the design of a single larger detector can be contemplated at this point.  
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=5.7in]{fig4.eps}
+\includegraphics[width=5.7in]{fig4.pdf}
 \caption{\label{fig:fig4} \scriptsize ESS building layout indicating an unallocated room  identified as a possible site for CE$\nu$NS detectors, and NAVISWORKS 3-D visualization of this room. Two promising locations have already been identified, in collaboration with ESS personnel. The first is this room (15-23 m to target), featuring 5.5 meters of steel monolith and a minimum of 6 meters of magnetite-loaded  heavy  concrete  (3.8 g/cm$^{3}$) in  the  line-of-sight to target.  A second are underground galleries as close as 23 m to target, with compacted soil and concrete pylons separating them from the  monolith. Based on our previous experience in characterizing and simulating neutron backgrounds at the SNS, both locations hold great potential, to be confirmed via MCNPX simulations and neutron measurements. }
 \end{center}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=6.2in]{fig5.eps}
+\includegraphics[width=6.2in]{fig5.pdf}
 \caption{\label{fig:fig5} \scriptsize {\it Left: }  former University of Chicago graduate student B. Scholz next to neutron detectors and dedicated shielding used for background studies at the SNS, prior to the first CE$\nu$NS measurement. This equipment exists and is available for similar studies at the ESS.  {\it Center:} (from \cite{science,bjorn}) beam-related background studies at the SNS. Both prompt neutron (central spike) and neutrino-induced neutron (NIN) backgrounds (yellow best fit) were measured or constrained using neutron-sensitive  scintillator cells. Similar studies are envisioned at the ESS once proton production has been initiated. {\it Right:} best-fit spectral hardness and flux for the small component of prompt neutrons detected at the CsI[Na] detector site during SNS background studies \cite{science,bjorn}. This is used to predict beam-associated backgrounds, allowing to select locations suitable for CE$\nu$NS experimentation. }
 \end{center}
 \end{figure}
@@ -292,10 +123,10 @@ Lastly, the collaboration will perform R\&D towards a second generation of CE$\n
 
 The scientific management of the collaboration will be the responsibility of the Federation Steering Committee (FSC), that will include the CSPs and the PIs of the GWGs. The FSC will be chaired by a coordination-spokesperson (XSP). The institutional management of the collaboration will be managed by the Federation Institutional Board (FIB), which will consist of the XSP, the CSPs (ex-officio members), one representative of the ESS and one representative of each of the institutions involved in the collaboration.\\
 
-The following institutions are currently involved in the $\nu$ESS collaboration: Donostia  International  Physics  Center  (DIPC, San Sebasti\'an, Spain). Enrico Fermi Institute, University  of  Chicago (Chicago, IL, USA). Laboratorio Subterr\'aneo de Canfranc (LSC, Spain). Instituto  de  F\'isica  Corpuscular (IFIC, Valencia, Spain).  Departament  de  Fisica  Quantica  i  Astrofisica  and  Institut  de  Ciencies  del  Cosmos, Universitat  de  Barcelona  (Barcelona, Spain).  Basque  Foundation  for  Science (Ikerbasque,  Bilbao, Spain).  Instituci\'o  Catalana  de  Recerca  i  Estudis  Avancats  (ICREA, Barcelona, Spain).  Yang  Institute  for  Theoretical  Physics  (Stony  Brook  University, USA). Northwestern University (Chicago, IL, USA). Instituto 
-Gallego  de  F\'isica  de  Altas  Energias,  Univ.  de  Santiago  de  Compostela, (Santiago, Spain). We expect that other institutions will join shortly. 
+%The following institutions are currently involved in the $\nu$ESS collaboration: Donostia  International  Physics  Center  (DIPC, San Sebasti\'an, Spain). Enrico Fermi Institute, University  of  Chicago (Chicago, IL, USA). Laboratorio Subterr\'aneo de Canfranc (LSC, Spain). Instituto  de  F\'isica  Corpuscular (IFIC, Valencia, Spain).  Departament  de  Fisica  Quantica  i  Astrofisica  and  Institut  de  Ciencies  del  Cosmos, Universitat  de  Barcelona  (Barcelona, Spain).  Basque  Foundation  for  Science (Ikerbasque,  Bilbao, Spain).  Instituci\'o  Catalana  de  Recerca  i  Estudis  Avancats  (ICREA, Barcelona, Spain).  Yang  Institute  for  Theoretical  Physics  (Stony  Brook  University, USA). Northwestern University (Chicago, IL, USA). Instituto 
+%Gallego  de  F\'isica  de  Altas  Energias,  Univ.  de  Santiago  de  Compostela, (Santiago, Spain). We expect that other institutions will join shortly. 
 
-\newpage
+%\newpage
 
 % Costing \& ESS Support Expected %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Costing \& ESS Support Expected}
@@ -304,7 +135,7 @@ The development of a World-Class CE$\nu$NS program at the ESS requires, on one s
 
 Early access to the ESS, as soon as protons-on-target are generated, would be necessary  to perform the neutron background studies delineated in Sec.\ 3. In this respect of potential site identification,  a dynamic collaboration with ESS personnel is already taking place. Besides a suitable location(s) for the detectors, the minimal support envisioned from the ESS once CE$\nu$NS activities have started would include the allocation of some infrastructure, similar to what is provided to neutron instruments (local collaborators, power, POT trigger signals, supplies such as cryogens, data storage, safety supervision, office space, etc.).
 
-\newpage
+%\newpage
 
 % Conclusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
@@ -313,18 +144,18 @@ CE$\nu$NS provides a new tool in the search for new physics beyond the Standard 
 
 Given the opportunity, we intend to apply our accumulated experience in developing low-background nuclear recoil detectors, which includes the first CE$\nu$NS detection at the SNS, to create this new program of ESS activities. The net result will be a significant expansion of the ESS physics potential, in exchange for a modest investment of resources. 
 
-\section{Acknowledgements}
-
-We are indebted to M. Eshraqi, Z. Lazic, R. Linander, M. Lindros, V. Santoro, A. Takibayev, and L. Zanini at the ESS for their encouragement, and many useful consultations. We are also indebted to our colleagues...
+%\section{Acknowledgements}
+%
+%We are indebted to M. Eshraqi, Z. Lazic, R. Linander, M. Lindros, V. Santoro, A. Takibayev, and L. Zanini at the ESS for their encouragement, and many useful consultations. We are also indebted to our colleagues...
 
 
 % BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\section{References}
-
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
-\fancyhead[R,OL]{bibliography}
-
-
-\end{document}
+%\newpage
+%\section{References}
+%
+%\bibliographystyle{unsrt}
+%\bibliography{bibliography}
+%\fancyhead[R,OL]{bibliography}
+%
+%
+%\end{document}
