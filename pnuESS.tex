@@ -18,6 +18,7 @@
 \usepackage{soul,color}          % highlight text
 \usepackage{chngcntr} % to change figure number
 \usepackage{lineno}
+\usepackage{float}
 
 \input{NextDefs.tex}
 \newcommand{\angstrom}{\textup{\AA}}
@@ -26,13 +27,31 @@
 
 \begin{document}
 %\linenumbers
-\title{Coherent Elastic Neutrino-Nucleus Scattering  at the ESS \\ \center{Expression of interest}}
+\title{Coherent Elastic Neutrino-Nucleus Scattering  at the ESS \\ \center{\Large Expression of Interest}}
+
+
 
 \input{author.tex}
 
+
+%\begin{center}
+\newcommand*{\plogo}{\includegraphics[width=0.3\textwidth]{ESS_logo.png}}
+\plogo
+%\end{center}
+
+
+
+%\begin{figure}[b]
+%\centerline{\includegraphics[scale=0.2]{ESS_logo.png}}
+%\end{figure}
+
+
 \input{abstract.tex}
 
-\keywords{coherent neutrino scattering ; neutrons ; spallation ; }
+
+
+
+%\keywords{coherent neutrino scattering ; neutrons ; spallation ; }
 %\arxivnumber{1234.56789}
 \notoctrue
 \maketitle
